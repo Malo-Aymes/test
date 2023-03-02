@@ -14,7 +14,7 @@ def init_connection():
     )
 
 conn = init_connection()
-
+"""
 # Perform query.
 # Uses st.cache_data to only rerun when the query changes or after 10 min.
 @st.cache_data(ttl=600)
@@ -31,7 +31,9 @@ option = st.selectbox('Class :', ('Weather', 'Clock', 'Calendar', 'Map', 'Phone'
 def write(s,c):
       run_query("INSERT INTO classification VALUE ('{s}','{c}')")
 
-button = st.button("Write")
+button = st.button("Write")"""
+
+help(conn)
 
 if user_input and button:
          st.write(run_query("SELECT * FROM classification"))
