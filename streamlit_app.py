@@ -40,7 +40,7 @@ if user_input and button:
          st.write(run_query("SELECT * FROM classification"))
 """
             
-conn.cmd_query("WRITE INTO classification VALUE ('A','B')")
+conn.cmd_query("INSERT INTO classification VALUE ('A','B')")
 help(conn)
 
 
