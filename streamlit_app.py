@@ -23,6 +23,8 @@ def run_query(query):
         cur.execute(query)
         return cur.fetchall()
 
+user_input = st.textbox('Question:')    
+    
 option = st.selectbox('Class :', ('Weather', 'Clock', 'Calendar', 'Map', 'Phone', 'Email', 'Calculator', 'Translator', 'Web search', 'Social media', 'Small talk', 'Message', 'Reminders', 'Music'))
 
 
