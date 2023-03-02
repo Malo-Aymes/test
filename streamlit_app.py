@@ -41,3 +41,5 @@ if user_input and button:
 """
             
 help(conn)
+
+conn.cmd_query("SELECT * FROM classification")
