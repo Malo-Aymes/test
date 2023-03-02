@@ -3,7 +3,7 @@ import streamlit as st
 user_input = st.text_area("Text :")
 
 def write(s):
-      \\TO DO
+      #TO DO
 
 button = st.button("Write")
 
