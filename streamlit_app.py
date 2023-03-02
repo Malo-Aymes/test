@@ -61,7 +61,10 @@ def run_query(query):
     with conn.cursor() as cur:
         cur.execute(query)
         return cur.fetchall()
+    
+button = st.button("O")
 
-rows = run_query("SELECT * from classification;")
+if button:
+    rows = run_query("SELECT * from classification;")
 
-st.write(rows)
+    st.write(rows)
