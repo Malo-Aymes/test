@@ -25,7 +25,6 @@ def init_connection():
         user=config["user"],
         password=config["password"],
         database=config["database"],
-        ssl_mode="VERIFY_IDENTITY",
         ssl={"ca": config["ssl-ca"]}
     )
 
