@@ -41,8 +41,6 @@ import mysql.connector as sql
 import streamlit as st
 
 # Initialize connection.
-# Uses st.cache_resource to only run once.
-@st.cache_resource
 def init_connection():
     config = st.secrets["tidb"]
     return sql.connect(
