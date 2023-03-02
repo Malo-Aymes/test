@@ -29,8 +29,7 @@ option = st.selectbox('Class :', ('Weather', 'Clock', 'Calendar', 'Map', 'Phone'
 
 
 def write(s,c):
-      r = run_query("SELECT * FROM classification")
-      st.write(r)
+      run_query(f"INSERT INTO classification VALUE ({s},{c})")
 
 button = st.button("Write")
 
