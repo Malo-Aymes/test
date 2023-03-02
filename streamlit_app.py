@@ -11,7 +11,7 @@ button = st.button("Write")
 if user_input and button:
          write(user_input)"""
 
-import MySQLdb
+import mysql.connector
 import streamlit as st
 
 # Initialize connection.
@@ -19,7 +19,7 @@ import streamlit as st
 @st.cache_resource
 def init_connection():
     config = st.secrets["tidb"]
-    return MySQLdb.connect(
+    return mysql.connector.connect(
         host=config["host"],
         port=config["port"],
         user=config["user"],
