@@ -4,6 +4,7 @@ user_input = st.text_area("Text :")
 
 def write(s):
       #TO DO
+      return 0
 
 button = st.button("Write")
 
