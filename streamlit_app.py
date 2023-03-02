@@ -39,4 +39,4 @@ def write(s,c):
 button = st.button("Write")
 
 if user_input and button:
-         write(user_input)
+         write(user_input,option)
