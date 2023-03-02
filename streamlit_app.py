@@ -1,16 +1,3 @@
-"""import streamlit as st
-
-user_input = st.text_area("Text :")
-
-def write(s):
-      #TO DO
-      return 0
-
-button = st.button("Write")
-
-if user_input and button:
-         write(user_input)"""
-
 import mysql.connector
 import streamlit as st
 
@@ -38,8 +25,18 @@ def run_query(query):
         cur.execute(query)
         return cur.fetchall()
 
-rows = run_query("SELECT * from classification;")
 
-# Print results.
-for row in rows:
-    st.write(f"{row[0]} has a :{row[1]}:")
+
+user_input = st.text_area("Text :")
+
+
+option = st.selectbox('Class :', ('Weather', 'Clock', 'Calendar', 'Map', 'Phone', 'Email', 'Calculator', 'Translator', 'Web search', 'Social media', 'Small talk', 'Message', 'Reminders', 'Music'))
+
+
+def write(s,c):
+      run_query(f"INSERT INTO classification VALUE ({s},{c}))
+
+button = st.button("Write")
+
+if user_input and button:
+         write(user_input)
