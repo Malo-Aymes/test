@@ -25,7 +25,7 @@ def init_connection():
         user=config["user"],
         password=config["password"],
         database=config["database"],
-        ssl={"ca": config["ssl-ca"]}
+        ssl_ca={"ca": config["ssl-ca"]}
     )
 
 conn = init_connection()
