@@ -5,3 +5,4 @@ panda
 matplotlib
 requests
 mysqlclient
+--upgrade pip
