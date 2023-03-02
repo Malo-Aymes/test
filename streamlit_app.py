@@ -34,7 +34,7 @@ def write(s,c):
 button = st.button("Write")
 
 if user_input and button:
-         st.write(run_query("SELECT * FROM classification")
+         st.write(run_query("SELECT * FROM classification"))
          write(user_input,option)
          st.write((user_input,option))
-         st.write(run_query("SELECT * FROM classification")
+         st.write(run_query("SELECT * FROM classification"))
