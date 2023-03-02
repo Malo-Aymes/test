@@ -4,4 +4,4 @@ numpy
 panda
 matplotlib
 requests
-mysqlclient
+mysql-connector-python
