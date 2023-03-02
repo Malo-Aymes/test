@@ -43,6 +43,6 @@ if user_input and button:
          st.write(run_query("SELECT * FROM classification"))
 """
             
-st.write(run_query("SELECT * FROM classification")
+st.write(run_query("SELECT * FROM classification"))
 
 
